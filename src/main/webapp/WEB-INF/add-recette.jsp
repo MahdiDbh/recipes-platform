@@ -653,9 +653,9 @@
       <div class="col-lg-4 col-md-4 mb-4">
         <h4 class="footer-title">Contact Us</h4>
         <ul class="footer-links">
-          <li><i class="fas fa-map-marker-alt me-2"></i> 123 Culinary Street, Foodville</li>
-          <li><i class="fas fa-phone me-2"></i> (123) 456-7890</li>
-          <li><i class="fas fa-envelope me-2"></i> info@culinaryconnect.com</li>
+          <li><i class="fas fa-map-marker-alt me-2"></i> Algeria ,Algier , El mohammadia </li>
+          <li><i class="fas fa-phone me-2"></i> +213 556 12 24 28</li>
+          <li><i class="fas fa-envelope me-2"></i> mahdi.debbah@outlook.com</li>
         </ul>
       </div>
     </div>

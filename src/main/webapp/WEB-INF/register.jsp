@@ -263,19 +263,20 @@
         <% } %>
         
         <form action="RegisterServlet" method="post" id="registerForm">
-          <div class="row">
+	             <div class="row">
             <div class="col-md-6">
+            </div>
+              <div class="col-md-6">
               <div class="mb-3">
-                <label for="firstName" class="form-label">First Name</label>
-                <input type="text" class="form-control" id="firstName" name="firstName" required>
+                <label for="name" class="form-label">hay!!!!</label>
+               	
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="mb-3">
-                <label for="lastName" class="form-label">Last Name</label>
-                <input type="text" class="form-control" id="lastName" name="lastName" required>
-              </div>
-            </div>
+          </div>
+          
+          <div class="mb-3">
+            <label for="name" class="form-label">name</label>
+            <input type="text" class="form-control" id="name" name="name" required>
           </div>
           
           <div class="mb-3">
@@ -325,7 +326,7 @@
         </div>
         
         <div class="register-footer">
-          <p>Already have an account? <a href="login.jsp">Sign in</a></p>
+          <p>Already have an account? <a href="/login">Sign in</a></p>
         </div>
       </div>
     </div>
