@@ -19,7 +19,7 @@ public class register extends HttpServlet {
        
     
 	
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 			String name = request.getParameter("name");
 			String email = request.getParameter("email");
 			String username = request.getParameter("username");
@@ -32,10 +32,11 @@ public class register extends HttpServlet {
 			try {
 
 				Class.forName("com.mysql.cj.jdbc.Driver");
-				Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Webapp", "root", "");
+				Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3307/WebApp", "root", "");
 				PreparedStatement stmt = con.prepareStatement("SELECT * FROM users WHERE email = ?");
 				stmt.setString(1, email);
 				ResultSet rs = stmt.executeQuery();
+				System.out.println("Hello, World!");
 				if ( !email.matches(emailRegex) || !password.matches(passwordRegex)
 						|| !password.equals(Cpassword)) {
 					if (!email.matches(emailRegex)) {
@@ -67,7 +68,7 @@ public class register extends HttpServlet {
 				}
 
 			} catch (Exception e) {
-
+				e.printStackTrace();
 			}
 
 		request.getRequestDispatcher("WEB-INF/register.jsp").forward(request, response);
@@ -75,7 +76,7 @@ public class register extends HttpServlet {
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 			request.getRequestDispatcher("WEB-INF/register.jsp").forward(request, response);
 
 }}

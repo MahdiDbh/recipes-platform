@@ -229,7 +229,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="home.jsp">Home</a>
+            
           </li>
           <li class="nav-item">
             <a class="nav-link" href="browse-recipes.jsp">Recipes</a>
@@ -242,7 +242,7 @@
           </li>
         </ul>
         <div class="ms-lg-3">
-          <a href="login.jsp" class="btn btn-outline-primary">Login</a>
+          <a href="login" class="btn btn-outline-primary">Login</a>
         </div>
       </div>
     </div>
@@ -262,7 +262,7 @@
           </div>
         <% } %>
         
-        <form action="RegisterServlet" method="post" id="registerForm">
+        <form action="register" method="post" id="registerForm">
 	             <div class="row">
             <div class="col-md-6">
             </div>
@@ -297,7 +297,7 @@
           
           <div class="mb-3">
             <label for="confirmPassword" class="form-label">Confirm Password</label>
-            <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required>
+            <input type="password" class="form-control" id="confirmPassword" name="Cpassword" required>
           </div>
           
           <div class="mb-4 form-check">
@@ -326,7 +326,7 @@
         </div>
         
         <div class="register-footer">
-          <p>Already have an account? <a href="/login">Sign in</a></p>
+          <p>Already have an account? <a href="login">Sign in</a></p>
         </div>
       </div>
     </div>

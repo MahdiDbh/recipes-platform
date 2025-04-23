@@ -240,7 +240,7 @@
           </li>
         </ul>
         <div class="ms-lg-3">
-          <a href="register.jsp" class="btn btn-primary">Register</a>
+          <a href="register" class="btn btn-primary">Register</a>
         </div>
       </div>
     </div>
@@ -260,7 +260,7 @@
           </div>
         <% } %>
         
-        <form action="LoginServlet" method="post">
+        <form action="login" method="post">
           <div class="mb-3">
             <label for="email" class="form-label">Email address</label>
             <input type="email" class="form-control" id="email" name="email" required>

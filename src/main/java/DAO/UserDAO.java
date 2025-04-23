@@ -9,7 +9,7 @@ import java.sql.Statement;
 import beans.User;
 
 public class UserDAO {
-	 private static final String URL = "jdbc:mysql://localhost:3306/WebApp";
+	 private static final String URL = "jdbc:mysql://localhost:3307/WebApp";
 	    private static final String USERNAME = "root";
 	    private static final String PASSWORD = "";
 
